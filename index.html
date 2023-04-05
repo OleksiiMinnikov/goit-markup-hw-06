@@ -299,13 +299,14 @@
 
     </main>
     
-<!-- FOOTER -->!!!!!
+<!-- FOOTER -->
 <footer class="footer link ">
     <section class="footer-list container">
         <div class="footer-left">
             <a class="footer-logo link" href="./index.html">Web<span class="footer-logo-hi">Studio</span></a>
             <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
                 growth solutions.</p>
+                
         </div>
 
         <div class="footer-soc">
@@ -347,7 +348,7 @@
             <form class="footer-form">
                     <input class="footer-input" type="email" name="email" placeholder="E-mail" />
     
-                <button class="footer-btn-sub" type="button">Subscribe
+                <button type="submit" class="footer-btn-sub">Subscribe
                     <svg width="24" height="24" class="footer-sub-icon">
                         <use href="./images/svg/symbol-defs.svg#icon-Subscribe"></use>
                     </svg>
@@ -362,13 +363,69 @@
 
 
 <!-- Modal -->
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal" >
+<div class="backdrop " data-modal>
+    <div class="modal">
         <button data-modal-close type="button" class="button-modal" >
             <svg  class="button-close" width="8" height="8" >
                 <use href="./images/svg/symbol-defs.svg#icon-close-black"></use>
             </svg>
         </button>
+        <p class="modal-titel">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form">
+     
+
+            <div class="modal-label-tex">
+                <label for="user-name">Name
+                    <div class="input-wrap">
+                        <input class="modal-input" type="text" name="modal-name" id="user-name">
+                        <svg width="18" height="24" class="modal-input-icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-person-modal"></use>
+                        </svg>
+                    </div>
+                </label>
+            </div>
+
+
+            <div class="modal-label-tex">
+                <label for="user-phone">Phone
+                    <div class="input-wrap">
+                        <input class="modal-input" type="tel" name="modal-phone" id="user-phone">
+                            <svg width="18" height="24" class="modal-input-icon">
+                                <use href="./images/svg/symbol-defs.svg#icon-phone-modal"></use>
+                            </svg>
+                    </div>
+                </label>
+            </div>
+
+            <div class="modal-label-tex">
+                <label for="user-email">Email
+                    <div class="input-wrap">
+                        <input class="modal-input" type="email" name="modal-phone" id="user-email">
+                        <svg width="18" height="24" class="modal-input-icon">
+                            <use href="./images/svg/symbol-defs.svg#icon-email-modal"></use>
+                        </svg>
+                    </div>
+                </label>
+            </div>
+
+            <!-- <div class="modal-label-tex">
+                <label for="user-comment">Comment
+                    <div class="input-wrap">
+                        <input class="modal-input" type="text" name="modal-comment" id="user-comment" placeholder="Text input">
+                    </div>
+                </label>
+            </div> -->
+
+            <div class="modal-label-tex">
+                <label for="user-comment">Comment
+                    <textarea name="modal-comment" id="user-comment" class="modal-textarea" placeholder="Text input"></textarea>
+                </label>
+            </div> 
+            
+            <button type="submit" >Send </button>
+
+        </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>
